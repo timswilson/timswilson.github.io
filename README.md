@@ -1,4 +1,12 @@
+# timswilson.com
+
+## Notes on Jekyll
+* _site is generated automatically, don't touch it 
+* To run Jekyll locally run bundle exec jekyll serve from the top level folder
+  * bundle exec jekyll serve --watch will run Jekyll and have it auto reconfigure upon save of a file.   
+
 # Jekyll/Bootstrap
+[Jekyll/Bootstrap GitHub](https://github.com/robertlove/jekyll-bootstrap)
 
 ![Jekyll](https://img.shields.io/badge/Jekyll-v3.9.0-red.svg)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.0.0--beta1-blueviolet)

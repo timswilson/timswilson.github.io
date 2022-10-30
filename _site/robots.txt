@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /jekyll-bootstrap/assets/
+Disallow: /assets/

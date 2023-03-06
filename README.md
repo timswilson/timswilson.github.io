@@ -1,11 +1,27 @@
 # timswilson.com
 
+### GitHub Pages URL
+
+https://timswilson.github.io/
+
+### To Run Locally
+
+http://localhost:4000/
+
+1. `$ bundle install`
+1. `$ bundle exec jekyll serve`
+1. or `$ bundle exec jekyll serve --watch` to server and auto refresh the server when files change
+
+---
+
 ## Notes on Jekyll
-* _site is generated automatically, don't touch it 
-* To run Jekyll locally run bundle exec jekyll serve from the top level folder
-  * bundle exec jekyll serve --watch will run Jekyll and have it auto reconfigure upon save of a file.   
+
+- \_site is generated automatically, don't touch it
+- To run Jekyll locally run bundle exec jekyll serve from the top level folder
+  - bundle exec jekyll serve --watch will run Jekyll and have it auto reconfigure upon save of a file.
 
 # Jekyll/Bootstrap
+
 [Jekyll/Bootstrap GitHub](https://github.com/robertlove/jekyll-bootstrap)
 
 ![Jekyll](https://img.shields.io/badge/Jekyll-v3.9.0-red.svg)
@@ -14,7 +30,7 @@
 
 Jekyll/Bootstrap is a Jekyll starter project for GitHub Pages with Bootstrap baked right in.
 
-Jekyll/Bootstrap solves the confusing task of integrating Bootstrap with Jekyll by doing the integration for you - *the right way* - then guiding you through the simple process of customising Bootstrap - *the right way*.
+Jekyll/Bootstrap solves the confusing task of integrating Bootstrap with Jekyll by doing the integration for you - _the right way_ - then guiding you through the simple process of customising Bootstrap - _the right way_.
 
 [Jekyll](https://jekyllrb.com/) is a static website generator that works seamlessly with [GitHub Pages](https://pages.github.com/). Whilst [Bootstrap](https://getbootstrap.com/) is the world's most popular front-end component library. Put this all together and you get a fast, secure and highly customisable static website with free hosting.
 
@@ -97,7 +113,7 @@ This will compile and minify all styles into `_site/assets/css/style.css`.
 
 1. Copy any `*.js` files to the [`assets/js`](assets/js) folder
 1. Open [`assets/js/script.js`](assets/js/script.js) and import your JavaScript file(s) (e.g. `{% include_relative path/to/prism.js %}`)
-1. Open [`_config.yml`](_config.yml) and add your JavaScript file(s) to the list of excludes under `exclude:` (e.g. `  - assets/js/path/to/prism.js`)
+1. Open [`_config.yml`](_config.yml) and add your JavaScript file(s) to the list of excludes under `exclude:` (e.g. ` - assets/js/path/to/prism.js`)
 
 This will compile (but not minify) all scripts into `_site/assets/js/script.js`. Jekyll doesn't support minification of JavaScript files on GitHub Pages. If you want your scripts to be minified, use the minified versions supplied by the third-party library.
 

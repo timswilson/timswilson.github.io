@@ -6,3 +6,7 @@ _site/404.html
 vendor/
 .DS_Store
 Thumbs.db
+node_modules/
+assets/css/style.css
+.idea/
+.claude/

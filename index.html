@@ -1,47 +1,517 @@
 ---
-title: Home
+title: Tim Wilson
 ---
 
-<div class="flex items-center justify-content-center text-center" style="height: 70vh; justify-content: center;">
-  <div class="my-2">
-    <img
-      width="225"
-      src="/assets/img/Tim Wilson's Headshot.jpg"
-      alt="Headshot of Tim"
-      class="rounded"
-    />
-    <div class="my-3">
-      <h1>Hi I'm Tim,</h1>
-      <h2 id="typeIt"></h2>
-    </div>
-  </div>
-</div>
+<div class="max-w-4xl mx-auto px-6 pt-20 pb-40">
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="section-label">Contact</div>
-  <hr class="section-divider">
-  <h2>Let's connect.</h2>
-  <p class="contact-sub">
-    Whether it's about Salesforce architecture,
-    or something else
-  </p>
-  <div class="contact-links">
-    <a href="https://www.linkedin.com/in/tim-s-wilson/" target="_blank" class="contact-link">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      LinkedIn
-    </a>
-    <a href="https://github.com/timswilson" target="_blank" class="contact-link">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-      GitHub
-    </a>
-    <a href="https://www.salesforce.com/trailblazer/timswilson" target="_blank" class="contact-link">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 5.2c-.7-.8-1.7-1.2-2.8-1.2-1.3 0-2.5.7-3.2 1.7-.5-.5-1.3-.8-2.1-.8-1.7 0-3.1 1.4-3.1 3.2 0 .3 0 .5.1.7C3.1 9.1 1.5 10.9 1.5 13c0 2.3 1.9 4.2 4.2 4.2.4 0 .8-.1 1.2-.2.6 1.2 1.9 2 3.3 2 1.1 0 2.1-.5 2.8-1.2.7.5 1.5.7 2.4.7 2.5 0 4.5-2 4.5-4.5 0-.4-.1-.8-.2-1.2 1.1-.8 1.8-2.1 1.8-3.5C21.5 6.9 19.3 4.8 16.5 5.2z"/></svg>
-      Trailblazer
-    </a>
-    <a href="mailto:me@timswilson.com" class="contact-link">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-      me@timswilson.com
-    </a>
-  </div>
-</section>
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════════════ -->
+  <section class="flex flex-col md:flex-row items-stretch gap-10">
+
+    <!-- Portrait (two stacked, crossfade on mode switch) -->
+    <!-- To use real photos: replace the gradient div with <img src="..." class="absolute inset-0 w-full h-full object-cover rounded-3xl" /> -->
+    <div class="relative flex-shrink-0 self-stretch" style="width:300px;min-height:300px">
+      <div id="portrait-work" class="absolute inset-0 rounded-3xl overflow-hidden" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.80 0.03 255/0.35) 14px,oklch(0.80 0.03 255/0.35) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.86 0.02 255) 100%);opacity:1;transition:opacity 500ms ease">
+        <div class="absolute inset-0 flex items-end justify-start p-4">
+          <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.04 255)">Work Headshot</span>
+        </div>
+      </div>
+      <div id="portrait-personal" class="absolute inset-0 rounded-3xl overflow-hidden" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.35) 14px,oklch(0.70 0.08 50/0.35) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.84 0.06 60) 100%);opacity:0;transition:opacity 500ms ease">
+        <div class="absolute inset-0 flex items-end justify-start p-4">
+          <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">Soccer Headshot</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="flex-1 flex flex-col justify-between min-w-0">
+      <div>
+        <p id="eyebrow-work" class="font-mono text-[11px] tracking-[0.22em] uppercase" style="color:var(--mode-accent);transition:color 400ms ease">Director of Technical Architecture</p>
+        <p id="eyebrow-personal" class="font-mono text-[11px] tracking-[0.22em] uppercase" style="color:var(--mode-accent);transition:color 400ms ease;display:none">Coach · Dad · Tinkerer</p>
+      </div>
+      <h1 class="text-5xl font-semibold tracking-tight leading-[1.05] mt-3">Tim Wilson</h1>
+      <div class="mt-5">
+        <p id="intro-work" class="text-[17px] leading-relaxed" style="color:var(--muted)">Salesforce Technical Architecture leader with 9+ years delivering enterprise solutions and building high-performing consulting teams. I co-lead a 35-person delivery organization across 50+ concurrent client engagements, with deep expertise spanning Salesforce architecture, enterprise integrations, and scaling delivery teams from solution design through production deployment.</p>
+        <p id="intro-personal" class="text-[17px] leading-relaxed" style="color:var(--muted);display:none">Off the clock, you'll usually find me on a soccer field. I coach youth teams in the Chattanooga area and it's easily one of the best parts of my week — watching kids figure out how to see the field, trust their teammates, and enjoy the game is a special kind of rewarding. When I'm not at practice, I'm with my family, probably losing a board game or making a questionable call on the grill.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       WORK / PERSONAL TOGGLE
+  ════════════════════════════════════════════════════════════ -->
+  <section class="mt-28 mb-28 flex flex-col items-center">
+    <p class="font-mono text-[10px] tracking-[0.28em] uppercase mb-5" style="color:var(--muted)">Viewing</p>
+    <div style="transform:scale(1.35)">
+      <div id="mode-toggle" role="tablist" class="relative flex p-1 rounded-full text-[13px] font-medium" style="background:var(--toggle-track);border:1px solid var(--toggle-border-clr)">
+        <div id="toggle-pill" aria-hidden="true" class="absolute top-1 bottom-1 rounded-full" style="left:4px;width:calc(50% - 4px);background:var(--toggle-pill);box-shadow:0 1px 2px oklch(0 0 0/0.08);transition:left 320ms cubic-bezier(.7,.2,.2,1)"></div>
+        <button id="btn-work" role="tab" aria-selected="true" onclick="setMode('work')" class="relative z-10 px-4 py-1.5 rounded-full capitalize" style="color:var(--fg);transition:color 300ms ease">Work</button>
+        <button id="btn-personal" role="tab" aria-selected="false" onclick="setMode('personal')" class="relative z-10 px-4 py-1.5 rounded-full capitalize" style="color:var(--muted);transition:color 300ms ease">Personal</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       WORK CONTENT
+  ════════════════════════════════════════════════════════════ -->
+  <div id="work-content" style="transition:opacity 400ms ease,transform 400ms ease">
+    <div class="space-y-28">
+
+      <!-- BY THE NUMBERS -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">By the numbers</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)"><div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">9+</div><div class="mt-2 text-[13px] leading-snug" style="color:var(--muted)">Years in the Salesforce ecosystem</div></div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)"><div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">50+</div><div class="mt-2 text-[13px] leading-snug" style="color:var(--muted)">Concurrent client engagements</div></div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)"><div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">35</div><div class="mt-2 text-[13px] leading-snug" style="color:var(--muted)">Person delivery org co-led</div></div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)"><div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">5/5</div><div class="mt-2 text-[13px] leading-snug" style="color:var(--muted)">CSAT scores, consistently</div></div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)"><div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">100+</div><div class="mt-2 text-[13px] leading-snug" style="color:var(--muted)">Lightning Web Components shipped</div></div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)"><div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">19</div><div class="mt-2 text-[13px] leading-snug" style="color:var(--muted)">Salesforce certifications</div></div>
+        </div>
+      </section>
+
+      <!-- SELECTED EXPERIENCE -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Selected experience</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="space-y-6">
+
+          <article class="p-7 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <div><h3 class="text-lg font-semibold">Director of Technical Architecture</h3><p class="text-sm mt-0.5" style="color:var(--muted)">Rosetree Solutions</p></div>
+              <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">Jan 2022 — Present</span>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-[15px] leading-relaxed" style="color:var(--muted)">
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Co-lead Salesforce delivery org alongside the Director of Solution Architecture, providing leadership across a 35-person team supporting ~50 concurrent engagements.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Directly manage 11 senior programmatic leaders — Technical Architects, Senior Developers, Data Cloud Architects, Data Migration Architects — owning performance, promotions, comp, and career development.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Own delivery forecasting, capacity planning, and resource allocation; partner with Sales and report to the Managing Partner on technical strategy, SOWs, and RFPs.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Built the internal Solution Library of frameworks and accelerators that improved delivery consistency across the org.</li>
+            </ul>
+          </article>
+
+          <article class="p-7 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <div><h3 class="text-lg font-semibold">Technical Architect</h3><p class="text-sm mt-0.5" style="color:var(--muted)">Rosetree Solutions</p></div>
+              <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">Apr 2021 — Jan 2022</span>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-[15px] leading-relaxed" style="color:var(--muted)">
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Led discovery engagements, translating business objectives into technical requirements, solution designs, and delivery plans.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Shipped 100+ Lightning Web Components and Aura components across client implementations.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Designed integrations with 20+ external systems via REST, SOAP, and Workato.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Authored the firm's Apex style guide and established a formal code review process.</li>
+            </ul>
+          </article>
+
+          <article class="p-7 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <div><h3 class="text-lg font-semibold">Solution Architect</h3><p class="text-sm mt-0.5" style="color:var(--muted)">Rosetree Solutions</p></div>
+              <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">Apr 2018 — Apr 2021</span>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-[15px] leading-relaxed" style="color:var(--muted)">
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Solution lead for Salesforce implementations across Sales Cloud, Service Cloud, Experience Cloud, Field Service, CPQ, and custom development.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Partnered with clients end-to-end — functional requirements through scalable technical delivery.</li>
+            </ul>
+          </article>
+
+          <article class="p-7 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <div><h3 class="text-lg font-semibold">Senior Application Developer</h3><p class="text-sm mt-0.5" style="color:var(--muted)">Precept Ministries International</p></div>
+              <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">Aug 2015 — Apr 2018</span>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-[15px] leading-relaxed" style="color:var(--muted)">
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Primary Salesforce & NetSuite Admin/Developer for 75+ users.</li>
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Built a Node.js SSO integration with Gigya for a Shopify storefront, cutting auth time from 20s to under 2s.</li>
+            </ul>
+          </article>
+
+          <article class="p-7 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <div><h3 class="text-lg font-semibold">NetSuite Administrator</h3><p class="text-sm mt-0.5" style="color:var(--muted)">SuiteLaunch</p></div>
+              <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">Nov 2013 — Aug 2015</span>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-[15px] leading-relaxed" style="color:var(--muted)">
+              <li class="pl-4 relative"><span class="absolute left-0 top-[0.7em] w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span>Supported multiple clients with NetSuite ERP/CRM implementations, customization, and training.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- MOMENTS GALLERY -->
+      <!-- Replace gradient divs with <img> tags when you have real photos -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Moments</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-6 gap-3" style="grid-auto-rows:140px">
+          <div class="col-span-4 row-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.75 0.04 255/0.32) 14px,oklch(0.75 0.04 255/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.83 0.025 250) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.04 255)">Team offsite · 2024</span></div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.75 0.04 255/0.32) 14px,oklch(0.75 0.04 255/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.83 0.025 250) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.04 255)">Dreamforce · 2023</span></div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.75 0.04 255/0.32) 14px,oklch(0.75 0.04 255/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.83 0.025 250) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.04 255)">Client workshop · 2024</span></div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.75 0.04 255/0.32) 14px,oklch(0.75 0.04 255/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.83 0.025 250) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.04 255)">Architecture session · 2023</span></div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.75 0.04 255/0.32) 14px,oklch(0.75 0.04 255/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.83 0.025 250) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.04 255)">Team dinner · 2022</span></div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.75 0.04 255/0.32) 14px,oklch(0.75 0.04 255/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.83 0.025 250) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.04 255)">Speaking event · 2024</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Skills</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Salesforce Architecture</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Lightning Web Components</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Apex</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">REST &amp; SOAP Integrations</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Data Cloud</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">DevOps &amp; Code Review</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Delivery Leadership</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Capacity Planning</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Mentorship &amp; Coaching</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">SOW &amp; RFP Development</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Client Engagement</span>
+          <span class="px-4 py-2 rounded-full text-sm" style="background:var(--card);border:1px solid var(--border)">Team Scaling</span>
+        </div>
+      </section>
+
+      <!-- SALESFORCE CERTIFICATIONS -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Salesforce certifications</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Application Architect</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Integration Architect</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Data Architect</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Sharing &amp; Visibility Architect</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Data Cloud Consultant</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Developer II</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Developer I</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">CRM Analytics &amp; Einstein Discovery Consultant</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Experience Cloud Consultant</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Service Cloud Consultant</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Sales Cloud Consultant</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Agentforce Specialist</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">AI Associate</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Marketing Cloud Engagement Developer</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Marketing Cloud Email Specialist</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Field Service Consultant</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform App Builder</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Administrator II</span></div>
+          <div class="flex items-center gap-3 py-3 px-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:var(--mode-accent)"></span><span class="text-[14px]">Platform Administrator</span></div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Education</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-baseline justify-between p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div><div class="font-medium">Master of Business Administration</div><div class="text-sm mt-0.5" style="color:var(--muted)">Bryan College</div></div>
+            <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">2015</span>
+          </div>
+          <div class="flex items-baseline justify-between p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <div><div class="font-medium">B.S. Business Administration</div><div class="text-sm mt-0.5" style="color:var(--muted)">Tennessee Technological University</div></div>
+            <span class="font-mono text-[11px] tracking-[0.16em] uppercase" style="color:var(--muted)">2010</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div><!-- /work-content -->
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PERSONAL CONTENT
+  ════════════════════════════════════════════════════════════ -->
+  <div id="personal-content" style="display:none;transition:opacity 400ms ease,transform 400ms ease">
+    <div class="space-y-28">
+
+      <!-- FAMILY -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Family</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-5">
+            <p class="text-[17px] leading-relaxed" style="color:var(--muted)">Home base is Ooltewah, Tennessee. Weekends are usually some combination of sidelines, backyard projects, church, and trying to keep up with everybody else. When things slow down it's a good Saturday with the family — the kind where nobody has anywhere to be.</p>
+          </div>
+          <!-- Replace gradient divs with <img> tags when you have real photos -->
+          <div class="md:col-span-7 grid grid-cols-6 gap-3" style="grid-auto-rows:120px">
+            <div class="col-span-4 row-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.32) 14px,oklch(0.70 0.08 50/0.32) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.82 0.05 55) 100%)">
+              <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">Family portrait</span></div>
+            </div>
+            <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.32) 14px,oklch(0.70 0.08 50/0.32) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.82 0.05 55) 100%)">
+              <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">On a hike</span></div>
+            </div>
+            <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.32) 14px,oklch(0.70 0.08 50/0.32) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.82 0.05 55) 100%)">
+              <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">Holiday</span></div>
+            </div>
+            <div class="col-span-3 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.32) 14px,oklch(0.70 0.08 50/0.32) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.82 0.05 55) 100%)">
+              <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">A good Saturday</span></div>
+            </div>
+            <div class="col-span-3 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.65 0.08 145/0.32) 14px,oklch(0.65 0.08 145/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.03 145) 0%,oklch(0.82 0.05 145) 100%)">
+              <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.06 145)">A good Sunday</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ON COACHING -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">On coaching</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <p class="md:col-span-7 text-[17px] leading-relaxed" style="color:var(--muted)">I've been coaching youth soccer for several seasons now. My philosophy is simple: kids should leave practice a little more confident than they arrived. Technique matters, but so does effort, curiosity, and the ability to laugh when you shank one over the crossbar. I try to run practices that feel more like games than drills, and I measure success by whether players want to come back the next week.</p>
+          <div class="md:col-span-5 grid grid-cols-2 gap-3">
+            <div class="p-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)">
+              <div class="font-mono text-[10px] tracking-[0.18em] uppercase mb-1.5" style="color:var(--mode-accent)">01</div>
+              <h4 class="font-semibold text-[14px] mb-1">Play with joy</h4>
+              <p class="text-[12.5px] leading-relaxed" style="color:var(--muted)">If it stops being fun, we've lost the plot. Competitive fire is welcome; grim faces are not.</p>
+            </div>
+            <div class="p-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)">
+              <div class="font-mono text-[10px] tracking-[0.18em] uppercase mb-1.5" style="color:var(--mode-accent)">02</div>
+              <h4 class="font-semibold text-[14px] mb-1">Effort over outcome</h4>
+              <p class="text-[12.5px] leading-relaxed" style="color:var(--muted)">We celebrate hustle, smart decisions, and bravery on the ball — scoreline second.</p>
+            </div>
+            <div class="p-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)">
+              <div class="font-mono text-[10px] tracking-[0.18em] uppercase mb-1.5" style="color:var(--mode-accent)">03</div>
+              <h4 class="font-semibold text-[14px] mb-1">Every player matters</h4>
+              <p class="text-[12.5px] leading-relaxed" style="color:var(--muted)">Equal minutes, real coaching, real feedback. The bench is not a waiting room.</p>
+            </div>
+            <div class="p-4 rounded-xl" style="background:var(--warm-tint);border:1px solid var(--border)">
+              <div class="font-mono text-[10px] tracking-[0.18em] uppercase mb-1.5" style="color:var(--mode-accent)">04</div>
+              <h4 class="font-semibold text-[14px] mb-1">Teach the game</h4>
+              <p class="text-[12.5px] leading-relaxed" style="color:var(--muted)">I want players to read the field, not just follow instructions. Questions beat commands.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAMS I COACH -->
+      <!-- Replace gradient divs with <img> tags when you have real team photos -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Teams I coach</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-6 gap-3" style="grid-auto-rows:150px">
+          <div class="col-span-4 row-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.65 0.08 145/0.32) 14px,oklch(0.65 0.08 145/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.03 145) 0%,oklch(0.82 0.05 145) 100%)">
+            <div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+              <div class="px-3 py-1.5 rounded-lg" style="background:oklch(0.99 0.005 80/0.92)">
+                <div class="text-sm font-semibold" style="color:oklch(0.22 0.04 40)">Team A</div>
+                <div class="text-[10px] font-mono tracking-wide uppercase" style="color:oklch(0.45 0.04 40)">Spring 2026</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.32) 14px,oklch(0.70 0.08 50/0.32) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.82 0.05 55) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">On-field action</span></div>
+          </div>
+          <div class="col-span-2 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.32) 14px,oklch(0.70 0.08 50/0.32) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.82 0.05 55) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">Training session</span></div>
+          </div>
+          <div class="col-span-3 rounded-2xl overflow-hidden relative" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.65 0.08 145/0.32) 14px,oklch(0.65 0.08 145/0.32) 15px),linear-gradient(135deg,oklch(0.92 0.03 145) 0%,oklch(0.82 0.05 145) 100%)">
+            <div class="absolute inset-0 flex items-end p-3"><span class="font-mono text-[10px] tracking-[0.16em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.32 0.06 145)">Tournament day</span></div>
+          </div>
+          <div class="col-span-3 rounded-2xl p-5 flex flex-col justify-between" style="background:var(--warm-tint);border:1px solid var(--border)">
+            <p class="font-mono text-[10px] tracking-[0.2em] uppercase" style="color:var(--mode-accent)">Seasons coached</p>
+            <div>
+              <div class="text-4xl font-semibold tracking-tight" style="color:var(--mode-accent)">6+</div>
+              <p class="text-[12px] mt-1" style="color:var(--muted)">Youth teams in the Chattanooga area.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- A FEW OTHER THINGS -->
+      <section>
+        <div class="flex items-center gap-4 mb-10">
+          <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">A few other things</span>
+          <span class="flex-1 h-px" style="background:var(--border)"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <h4 class="font-semibold mb-2">Grilling</h4>
+            <p class="text-[14px] leading-relaxed" style="color:var(--muted)">Smoker on weekends, griddle on weeknights. Always chasing a better brisket.</p>
+          </div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <h4 class="font-semibold mb-2">Home projects</h4>
+            <p class="text-[14px] leading-relaxed" style="color:var(--muted)">If the house doesn't have a half-finished project going, something's wrong.</p>
+          </div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <h4 class="font-semibold mb-2">Reading</h4>
+            <p class="text-[14px] leading-relaxed" style="color:var(--muted)">A stack of leadership and theology books, usually one of each going at once.</p>
+          </div>
+          <div class="p-6 rounded-2xl" style="background:var(--card);border:1px solid var(--border)">
+            <h4 class="font-semibold mb-2">Travel</h4>
+            <p class="text-[14px] leading-relaxed" style="color:var(--muted)">Slow trips with the family — national parks, beaches, small towns with good food.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div><!-- /personal-content -->
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════════════════════ -->
+  <section class="mt-28">
+    <div class="flex items-center gap-4 mb-10">
+      <span class="font-mono text-[11px] tracking-[0.24em] uppercase" style="color:var(--mode-accent)">Get in touch</span>
+      <span class="flex-1 h-px" style="background:var(--border)"></span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-5">
+        <h2 class="text-4xl font-semibold tracking-tight leading-[1.1]">Let's talk.</h2>
+        <p class="mt-4 text-[16px] leading-relaxed" style="color:var(--muted)">Whether it's a Salesforce problem you're wrestling with, a coaching idea, or just a good book recommendation — I'd love to hear from you.</p>
+      </div>
+      <div class="md:col-span-7 grid grid-cols-1 gap-3">
+
+        <a href="mailto:me@timswilson.com" class="group flex items-center justify-between p-6 rounded-2xl transition-opacity hover:opacity-80" style="background:var(--card);border:1px solid var(--border)">
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full grid place-items-center flex-shrink-0" style="background:var(--warm-tint);color:var(--mode-accent)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </div>
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.22em] uppercase" style="color:var(--muted)">Email</div>
+              <div class="text-[15px] font-medium mt-0.5">me@timswilson.com</div>
+            </div>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--muted)"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/tim-s-wilson/" target="_blank" class="group flex items-center justify-between p-6 rounded-2xl transition-opacity hover:opacity-80" style="background:var(--card);border:1px solid var(--border)">
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full grid place-items-center flex-shrink-0" style="background:var(--warm-tint);color:var(--mode-accent)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v11H3v-11zM9.5 9.5h3.8v1.5h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.65 4.78 6.1V20.5h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.88 1.27-1.88 2.6v4.98h-4v-11z"/></svg>
+            </div>
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.22em] uppercase" style="color:var(--muted)">LinkedIn</div>
+              <div class="text-[15px] font-medium mt-0.5">Connect with me</div>
+            </div>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--muted)"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+
+        <a href="https://github.com/timswilson" target="_blank" class="group flex items-center justify-between p-6 rounded-2xl transition-opacity hover:opacity-80" style="background:var(--card);border:1px solid var(--border)">
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full grid place-items-center flex-shrink-0" style="background:var(--warm-tint);color:var(--mode-accent)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.12.82-.26.82-.58v-2.1c-3.33.72-4.03-1.6-4.03-1.6-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1 .1-.78.42-1.32.77-1.62-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.92 1.24 3.23 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg>
+            </div>
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.22em] uppercase" style="color:var(--muted)">GitHub</div>
+              <div class="text-[15px] font-medium mt-0.5">See what I'm building</div>
+            </div>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--muted)"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /max-w-4xl -->
+
+<script>
+(function () {
+  var currentMode = 'work';
+
+  function setMode(mode) {
+    if (mode === currentMode) return;
+    var isWork = mode === 'work';
+    currentMode = mode;
+
+    // Toggle pill
+    document.getElementById('toggle-pill').style.left = isWork ? '4px' : '50%';
+
+    // Button colors
+    document.getElementById('btn-work').style.color = isWork ? 'var(--fg)' : 'var(--muted)';
+    document.getElementById('btn-personal').style.color = isWork ? 'var(--muted)' : 'var(--fg)';
+    document.getElementById('btn-work').setAttribute('aria-selected', isWork);
+    document.getElementById('btn-personal').setAttribute('aria-selected', !isWork);
+
+    // Portrait crossfade
+    document.getElementById('portrait-work').style.opacity = isWork ? '1' : '0';
+    document.getElementById('portrait-personal').style.opacity = isWork ? '0' : '1';
+
+    // Hero text swap
+    document.getElementById('eyebrow-work').style.display = isWork ? '' : 'none';
+    document.getElementById('eyebrow-personal').style.display = isWork ? 'none' : '';
+    document.getElementById('intro-work').style.display = isWork ? '' : 'none';
+    document.getElementById('intro-personal').style.display = isWork ? 'none' : '';
+
+    // CSS var for accent color
+    document.documentElement.classList.toggle('mode-personal', !isWork);
+
+    // Content crossfade
+    var outgoing = document.getElementById(isWork ? 'personal-content' : 'work-content');
+    var incoming = document.getElementById(isWork ? 'work-content' : 'personal-content');
+
+    outgoing.style.opacity = '0';
+    outgoing.style.transform = 'translateY(8px)';
+    outgoing.style.pointerEvents = 'none';
+
+    setTimeout(function () {
+      outgoing.style.display = 'none';
+      outgoing.style.opacity = '';
+      outgoing.style.transform = '';
+      outgoing.style.pointerEvents = '';
+
+      incoming.style.display = 'block';
+      incoming.style.opacity = '0';
+      incoming.style.transform = 'translateY(8px)';
+      incoming.style.pointerEvents = 'none';
+
+      // Force reflow then animate in
+      incoming.getBoundingClientRect();
+      incoming.style.opacity = '1';
+      incoming.style.transform = 'translateY(0)';
+      incoming.style.pointerEvents = 'auto';
+    }, 400);
+  }
+
+  function toggleDark() {
+    var isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('tw-dark', isDark);
+    document.getElementById('icon-moon').style.display = isDark ? 'none' : '';
+    document.getElementById('icon-sun').style.display = isDark ? '' : 'none';
+  }
+
+  // Sync icon with current dark state on load
+  if (document.documentElement.classList.contains('dark')) {
+    document.getElementById('icon-moon').style.display = 'none';
+    document.getElementById('icon-sun').style.display = '';
+  }
+
+  // Expose to global scope for onclick handlers
+  window.setMode = setMode;
+  window.toggleDark = toggleDark;
+})();
+</script>

@@ -6,9 +6,9 @@ url: "https://timswilson.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-# SASS
-sass:
-  style: :compressed
+# Plugins
+plugins:
+  - jekyll-seo-tag
 
 # Defaults
 defaults:
@@ -19,8 +19,12 @@ defaults:
 
 # Exclude
 exclude:
-  - assets/js/bootstrap.bundle.min.js
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - assets/css/input.css

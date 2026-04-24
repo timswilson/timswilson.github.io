@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+  }
+}
+
+@layer components {
+  .contact {
+    padding: 6rem 2rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #a1a1aa;
+    margin-bottom: 1rem;
+  }
+
+  .section-divider {
+    width: 40px;
+    height: 1.5px;
+    border: none;
+    margin: 0 0 3rem 0;
+    background: #d1d1d6;
+    border-radius: 2px;
+  }
+
+  .contact h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+  }
+
+  .contact-sub {
+    color: #52525b;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    max-width: 480px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #52525b;
+    text-decoration: none;
+    font-size: 0.92rem;
+    padding: 0.85rem 1.2rem;
+    background: #f4f4f6;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    max-width: 400px;
+  }
+
+  .contact-link:hover {
+    border-color: #e4e4e7;
+    color: #18181b;
+    background: #ededf0;
+    transform: translateX(4px);
+  }
+
+  .contact-link svg {
+    flex-shrink: 0;
+    opacity: 0.5;
+  }
+
+  .contact-link:hover svg {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 640px) {
+    .contact {
+      padding: 4rem 1.25rem;
+    }
+
+    .contact-link {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,3 +1,85 @@
 new TypeIt("#typeIt", {
-  strings: "This is what will be typed!",
-}).go();
+    speed: 50,
+    waitUntilVisible: true,
+    cursorChar: "|",
+})
+    // — Role —
+    .pause(1200)
+    .type("I'm the Director of")
+    .pause(500)
+    .break()
+    .type("Technical Architecture")
+    .pause(2500)
+    .delete()
+    .pause(500)
+    .type("at Rosetree Solutions")
+    .pause(500)
+    .break()
+    .type("a Salesforce cons")
+    .pause(1000)
+    .delete(17)
+    .pause(400)
+    .type("an <b>exceptional</b> Salesforce consulting firm")
+    .pause(2500)
+    .delete()
+    .pause(600)
+
+    // — Team —
+    .type("That means I get to lead")
+    .pause(500)
+    .break()
+    .type("an incredible team of...")
+    .pause(2500)
+    .delete()
+    .pause(500)
+    .type("Salesforce Architects & Developers")
+    .pause(2500)
+    .delete()
+    .pause(600)
+
+    // — Certs —
+    .type("I hold 19+ sal")
+    .pause(300)
+    .delete(3, { speed: 200 })
+    .pause(300)
+    .type("Salesforce certifications")
+    .pause(500)
+    .break()
+    .type("including...")
+    .pause(2000)
+    .delete()
+    .pause(500)
+    .type("Certified Platform Developer II")
+    .pause(2500)
+    .delete()
+    .pause(500)
+    .type("& Application Architect")
+    .pause(2500)
+    .delete()
+    .pause(600)
+
+    // — Outside work —
+    .type("Outside of work...")
+    .pause(1500)
+    .delete()
+    .pause(500)
+    .type("I'm a husband and father")
+    .pause(400)
+    .type("<em> first</em>")
+    .pause(2500)
+    .delete()
+    .pause(500)
+    .type("a board game enthusiast")
+    .pause(2500)
+    .delete()
+    .pause(500)
+    .type("and a volunteer soccer coach")
+    .pause(2500)
+    .delete()
+    .pause(600)
+
+    // — Closer —
+    .type("A Salesforce Architect")
+    .pause(800)
+    .type(", Husband, Father.")
+    .go();

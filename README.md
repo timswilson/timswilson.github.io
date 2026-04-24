@@ -1,5 +1,12 @@
 # timswilson.com
 
+Personal site built with Jekyll + GitHub Pages.
+
+**Live at:** https://timswilson.github.io/
+
+---
+
+## Quick Start (Local Dev)
 **GitHub Pages URL:** https://timswilson.github.io/  
 **Custom Domain:** https://timswilson.com  
 **Stack:** Jekyll + Bootstrap 5 (forked from [robertlove/jekyll-bootstrap](https://github.com/robertlove/jekyll-bootstrap))
@@ -149,80 +156,86 @@ Before you begin, ensure you've installed [Jekyll](https://jekyllrb.com/). Then:
 1. `$ bundle install`
 1. `$ bundle exec jekyll serve`
 
-If all went well, you'll be able to view your new Jekyll/Bootstrap website locally by going to http://127.0.0.1:4000/jekyll-bootstrap/ in your browser.
-
-## Usage
-
-### Configuration
-
-- Open [`_config.yml`](_config.yml) and update the following configuration options:
-  - `title`
-  - `description`
-  - `baseurl`
-  - `url`
-  - `twitter`
-- Replace `/favicon.ico` with your own favicon
-- Replace `/assets/img/image.jpg` with your own image
-
-**Note:** Changes to `_config.yml` require you to rerun `$ bundle exec jekyll serve` in order for the changes to take effect.
-
-For a full list of configuration options, see [Jekyll Configuration](https://jekyllrb.com/docs/configuration/).
-
-### Customising Bootstrap
-
-One of the biggest criticisms of Bootstrap is that it makes your website look like every other Bootstrap website out there. This criticism is borne out of ignorance. Used properly, you'll be able to customise Bootstrap to make even the pickiest designer proud of you.
-
-The process is:
-
-1. Use Bootstrap components and classes in your HTML - there are many (and many utility classes are undocumented)
-1. Override Bootstrap's default variables in [`_sass/_variables.scss`](_sass/_variables.scss)
-1. Write custom styles in [`assets/css/style.css`](assets/css/style.scss)
-1. Write custom scripts in [`assets/js/script.js`](assets/js/script.js)
-
-For a full list of classes - including the undocumented ones, see [Bootstrap CSS](https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css)
-
-For a full list of variables, see [Bootstrap SCSS Variables](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss).
-
-**Note:** Done correctly, you'll likely never get to steps 3 and 4. If you do, before continuing, have another think about the way you're architecting your front-end.
-
-### Icons
-
-Jekyll/Bootstrap comes with [Bootstrap Icons](https://icons.getbootstrap.com/) pre-installed. Use the icon include for all your icon needs. The `name` parameter is used to specify the icon and is required. The `class` parameter is used to add any additional classes for styling and is optional.
-
-```
-{% include icon.html name='github' class='text-danger' %}
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
-### Using Third-party Libraries
+Visit http://localhost:4000/
 
-Sometimes you'll want to use third-party libraries to achieve the results you're after. For example, you might want to use [Prism](https://prismjs.com/) for syntax highlighting or [Moment.js](https://momentjs.com/) for displaying dates and times in JavaScript.
+---
 
-To use a third-party library:
+## File Guide — What to Edit
 
-#### Styles
+### Content Updates (Most Common)
 
-1. Copy any `*.css` or `*.scss` files to the [`_sass`](_sass) folder
-1. Rename any `*.css` files to `*.scss` (e.g. rename `prism.css` to `prism.scss`)
-1. Open [`assets/css/style.css`](assets/css/style.scss) and import your SCSS file(s) (e.g. `@import "path/to/prism";` - leaving out the `.scss` file extension)
+| Want to update? | Edit this file |
+|-----------------|----------------|
+| **Main content** (about, experience, skills, personal info) | `index.html` |
+| **Site title / subtitle** | `index.html` (top header section) |
+| **Profile photo** | Replace `assets/img/Tim Wilson's Headshot.jpg` |
+| **Contact links** | `index.html` (footer contact section) |
 
-This will compile and minify all styles into `_site/assets/css/style.css`.
+### Appearance
 
-#### Scripts
+| Want to update? | Edit this file |
+|-----------------|----------------|
+| **Colors / fonts / spacing** | `_sass/_variables.scss` |
+| **Custom CSS** | `assets/css/style.scss` |
+| **Favicon** | Replace `favicon.ico` |
+| **Site title in browser tab** | `index.html` → `<title>` tag |
 
-1. Copy any `*.js` files to the [`assets/js`](assets/js) folder
-1. Open [`assets/js/script.js`](assets/js/script.js) and import your JavaScript file(s) (e.g. `{% include_relative path/to/prism.js %}`)
-1. Open [`_config.yml`](_config.yml) and add your JavaScript file(s) to the list of excludes under `exclude:` (e.g. ` - assets/js/path/to/prism.js`)
+### Config
 
-This will compile (but not minify) all scripts into `_site/assets/js/script.js`. Jekyll doesn't support minification of JavaScript files on GitHub Pages. If you want your scripts to be minified, use the minified versions supplied by the third-party library.
+| Want to update? | Edit this file |
+|-----------------|----------------|
+| **Site-wide settings** | `_config.yml` |
 
-## Contributing
+> ⚠️ Changes to `_config.yml` require restarting the server: `bundle exec jekyll serve`
 
-See [Contributing](https://github.com/robertlove/.github/blob/master/CONTRIBUTING.md).
+---
 
-## Credits
+## Files You Should NOT Touch
 
-See [Contributors](https://github.com/robertlove/jekyll-bootstrap/graphs/contributors).
+- ❌ `_site/` — Auto-generated output (gitignored, don't commit)
+- ❌ `_includes/` — Jekyll layout includes (unless you know what you're doing)
+- ❌ `_layouts/` — Page layouts (defaults work fine)
+- ❌ `_sass/` — Unless changing colors/fonts
 
-## License
+---
 
-See [LICENSE](LICENSE).
+## Deploying Changes
+
+1. Make your edits in `index.html` (or other files)
+2. Commit:
+   ```bash
+   git add .
+   git commit -m "Update site content"
+   git push origin master
+   ```
+3. GitHub Pages auto-deploys in ~1-2 minutes
+
+---
+
+## Tips
+
+- **Use the local server** — Edit locally, check `localhost:4000`, then push
+- **Keep `Gemfile.lock` committed** — Ensures consistent Jekyll versions
+- **Images** — Put in `assets/img/` and reference as `/assets/img/filename.jpg`
+- **Dark mode is baked in** — The current site uses custom CSS, not Bootstrap. Edit `index.html` or `assets/css/style.scss` to change colors
+
+---
+
+## Troubleshooting
+
+**Site not updating after push?**
+- Wait 1-2 minutes for GitHub Pages to rebuild
+- Check GitHub repo → Actions tab for build errors
+
+**Local server won't start?**
+- Run `bundle install` first
+- Check Ruby version: `ruby -v`
+
+---
+
+Built with Jekyll. Hosted on GitHub Pages.

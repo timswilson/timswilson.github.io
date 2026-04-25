@@ -3,95 +3,43 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    --bg: oklch(0.98 0.008 80);
+    --fg: oklch(0.22 0.02 255);
+    --muted: oklch(0.48 0.02 255);
+    --card: oklch(1 0 0);
+    --border: oklch(0.92 0.01 80);
+    --header-bg: oklch(0.98 0.008 80 / 0.78);
+    --toggle-track: oklch(0.94 0.01 80);
+    --toggle-border-clr: oklch(0.90 0.01 80);
+    --toggle-pill: oklch(1 0 0);
+    --warm-tint: oklch(0.96 0.02 70);
+    --mode-accent: oklch(0.28 0.06 255);
+  }
+  html.dark {
+    --bg: oklch(0.20 0.01 255);
+    --fg: oklch(0.95 0.005 80);
+    --muted: oklch(0.70 0.01 80);
+    --card: oklch(0.24 0.015 255);
+    --border: oklch(0.32 0.01 255);
+    --header-bg: oklch(0.20 0.01 255 / 0.75);
+    --toggle-track: oklch(0.26 0.015 255);
+    --toggle-border-clr: oklch(0.32 0.01 255);
+    --toggle-pill: oklch(0.36 0.04 255);
+    --warm-tint: oklch(0.28 0.03 50);
+    --mode-accent: oklch(0.72 0.08 255);
+  }
+  html.mode-personal {
+    --mode-accent: oklch(0.52 0.12 40);
+  }
+  html.dark.mode-personal {
+    --mode-accent: oklch(0.52 0.12 40);
+  }
+
   body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-  }
-}
-
-@layer components {
-  .contact {
-    padding: 6rem 2rem;
-    max-width: 860px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: #a1a1aa;
-    margin-bottom: 1rem;
-  }
-
-  .section-divider {
-    width: 40px;
-    height: 1.5px;
-    border: none;
-    margin: 0 0 3rem 0;
-    background: #d1d1d6;
-    border-radius: 2px;
-  }
-
-  .contact h2 {
-    font-size: 1.85rem;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    margin-bottom: 1rem;
-  }
-
-  .contact-sub {
-    color: #52525b;
-    margin-bottom: 2.5rem;
-    font-size: 1rem;
-    max-width: 480px;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: #52525b;
-    text-decoration: none;
-    font-size: 0.92rem;
-    padding: 0.85rem 1.2rem;
-    background: #f4f4f6;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    transition: all 0.2s ease;
-    max-width: 400px;
-  }
-
-  .contact-link:hover {
-    border-color: #e4e4e7;
-    color: #18181b;
-    background: #ededf0;
-    transform: translateX(4px);
-  }
-
-  .contact-link svg {
-    flex-shrink: 0;
-    opacity: 0.5;
-  }
-
-  .contact-link:hover svg {
-    opacity: 0.8;
-  }
-
-  @media (max-width: 640px) {
-    .contact {
-      padding: 4rem 1.25rem;
-    }
-
-    .contact-link {
-      max-width: 100%;
-    }
+    background-color: var(--bg);
+    color: var(--fg);
+    transition: background-color 400ms ease, color 400ms ease;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 }

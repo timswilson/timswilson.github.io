@@ -12,15 +12,11 @@ title: Tim Wilson
     <!-- Portrait (two stacked, crossfade on mode switch) -->
     <!-- To use real photos: replace the gradient div with <img src="..." class="absolute inset-0 w-full h-full object-cover rounded-3xl" /> -->
     <div class="relative flex-shrink-0 self-stretch" style="width:300px;min-height:300px">
-      <div id="portrait-work" class="absolute inset-0 rounded-3xl overflow-hidden" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.80 0.03 255/0.35) 14px,oklch(0.80 0.03 255/0.35) 15px),linear-gradient(135deg,oklch(0.92 0.012 255) 0%,oklch(0.86 0.02 255) 100%);opacity:1;transition:opacity 500ms ease">
-        <div class="absolute inset-0 flex items-end justify-start p-4">
-          <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.04 255)">Work Headshot</span>
-        </div>
+      <div id="portrait-work" class="absolute inset-0 rounded-3xl overflow-hidden" style="opacity:1;transition:opacity 500ms ease">
+        <img src="/assets/img/headshots/work-headshot.jpg" alt="Tim Wilson work headshot" class="absolute inset-0 w-full h-full object-cover rounded-3xl" />
       </div>
-      <div id="portrait-personal" class="absolute inset-0 rounded-3xl overflow-hidden" style="background-image:repeating-linear-gradient(-45deg,transparent 0,transparent 14px,oklch(0.70 0.08 50/0.35) 14px,oklch(0.70 0.08 50/0.35) 15px),linear-gradient(135deg,oklch(0.93 0.03 85) 0%,oklch(0.84 0.06 60) 100%);opacity:0;transition:opacity 500ms ease">
-        <div class="absolute inset-0 flex items-end justify-start p-4">
-          <span class="font-mono text-[10px] tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:oklch(0.99 0.005 80/0.85);color:oklch(0.35 0.06 40)">Soccer Headshot</span>
-        </div>
+      <div id="portrait-personal" class="absolute inset-0 rounded-3xl overflow-hidden" style="opacity:0;transition:opacity 500ms ease">
+        <img src="/assets/img/headshots/soccer-headshot.jpg" alt="Tim Wilson soccer headshot" class="absolute inset-0 w-full h-full object-cover rounded-3xl" />
       </div>
     </div>
 
@@ -32,8 +28,8 @@ title: Tim Wilson
       </div>
       <h1 class="text-5xl font-semibold tracking-tight leading-[1.05] mt-3">Tim Wilson</h1>
       <div class="mt-5">
-        <p id="intro-work" class="text-[17px] leading-relaxed" style="color:var(--muted)">Salesforce Technical Architecture leader with 9+ years delivering enterprise solutions and building high-performing consulting teams. I co-lead a 35-person delivery organization across 50+ concurrent client engagements, with deep expertise spanning Salesforce architecture, enterprise integrations, and scaling delivery teams from solution design through production deployment.</p>
-        <p id="intro-personal" class="text-[17px] leading-relaxed" style="color:var(--muted);display:none">Off the clock, you'll usually find me on a soccer field. I coach youth teams in the Chattanooga area and it's easily one of the best parts of my week — watching kids figure out how to see the field, trust their teammates, and enjoy the game is a special kind of rewarding. When I'm not at practice, I'm with my family, probably losing a board game or making a questionable call on the grill.</p>
+        <p id="intro-work" class="text-[17px] leading-relaxed" style="color:var(--muted)">Salesforce Technical Architecture leader with over nine years of experience delivering enterprise solutions and supporting high-performing consulting teams. Currently helping lead a 35-person delivery organization across more than 50 active client engagements, with a focus on Salesforce architecture, enterprise integrations, and scaling delivery teams from solution design through production deployment.</p>
+        <p id="intro-personal" class="text-[17px] leading-relaxed" style="color:var(--muted);display:none">Outside of work, I spend most of my time with my family. I coach both of my daughters’ competitive soccer teams, which has become one of the most rewarding parts of my week. I enjoy seeing their growth over time and being part of their development, both on and off the field. I also enjoy board games, a good cup of coffee, and volunteering in the children’s ministry at our church.</p>
       </div>
     </div>
 
@@ -47,8 +43,8 @@ title: Tim Wilson
     <div style="transform:scale(1.35)">
       <div id="mode-toggle" role="tablist" class="relative flex p-1 rounded-full text-[13px] font-medium" style="background:var(--toggle-track);border:1px solid var(--toggle-border-clr)">
         <div id="toggle-pill" aria-hidden="true" class="absolute top-1 bottom-1 rounded-full" style="left:4px;width:calc(50% - 4px);background:var(--toggle-pill);box-shadow:0 1px 2px oklch(0 0 0/0.08);transition:left 320ms cubic-bezier(.7,.2,.2,1)"></div>
-        <button id="btn-work" role="tab" aria-selected="true" onclick="setMode('work')" class="relative z-10 px-4 py-1.5 rounded-full capitalize" style="color:var(--fg);transition:color 300ms ease">Work</button>
-        <button id="btn-personal" role="tab" aria-selected="false" onclick="setMode('personal')" class="relative z-10 px-4 py-1.5 rounded-full capitalize" style="color:var(--muted);transition:color 300ms ease">Personal</button>
+        <button id="btn-work" role="tab" aria-selected="true" onclick="setMode('work')" class="relative z-10 rounded-full capitalize" style="width:50%;display:flex;align-items:center;justify-content:center;padding:.375rem 1rem;color:var(--fg);transition:color 300ms ease">Work</button>
+        <button id="btn-personal" role="tab" aria-selected="false" onclick="setMode('personal')" class="relative z-10 rounded-full capitalize" style="width:50%;display:flex;align-items:center;justify-content:center;padding:.375rem 1rem;color:var(--muted);transition:color 300ms ease">Personal</button>
       </div>
     </div>
   </section>

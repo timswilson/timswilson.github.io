@@ -1,11 +1,37 @@
-// ─── Years at Rosetree ───────────────────────────────────────────────────────
-// Calculates years elapsed since Tim's hire date at Rosetree Solutions (April 2018)
-// and injects the value into the hero bio so it never needs a manual update.
+// ─── Rosetree stats ───────────────────────────────────────────────────────────
+// Update these values here — they populate the hero bio, By the Numbers cards,
+// and work experience bullet points automatically.
 (function () {
-  var rosetreeStartDate = new Date(2018, 3); // April 2018 (JS months are 0-indexed: 3 = April)
-  var now = new Date();
-  var years = Math.floor((now - rosetreeStartDate) / (1000 * 60 * 60 * 24 * 365.25));
-  document.getElementById('years-at-rosetree').textContent = years + '+ years';
+  // Current size of the Rosetree delivery org
+  var teamSize = 55;
+  document.getElementById('rosetree-team-size-hero').textContent = teamSize;
+  document.getElementById('rosetree-team-size-stat').textContent = teamSize;
+  document.getElementById('rosetree-team-size-bullet').textContent = teamSize;
+
+  // Active client engagements currently supported
+  var clientEngagements = 50;
+  document.getElementById('client-engagements-hero').textContent = clientEngagements;
+  document.getElementById('client-engagements-stat').textContent = clientEngagements + '+';
+  document.getElementById('client-engagements-bullet').textContent = clientEngagements;
+})();
+
+// ─── Dynamic date calculations ───────────────────────────────────────────────
+(function () {
+  function yearsSince(date) {
+    return Math.floor((new Date() - date) / (1000 * 60 * 60 * 24 * 365.25));
+  }
+
+  // Hero bio: Tim's hire date at Rosetree Solutions (April 2018)
+  document.getElementById('years-at-rosetree').textContent =
+    yearsSince(new Date(2018, 3)) + '+ years';
+
+  // By the numbers: Tim's first Salesforce role (April 2016)
+  document.getElementById('years-in-salesforce').textContent =
+    yearsSince(new Date(2016, 3)) + '+';
+
+  // By the numbers: Promoted to Director of Technical Architecture (January 2022)
+  document.getElementById('years-in-leadership').textContent =
+    yearsSince(new Date(2022, 0)) + '+';
 })();
 
 // ─── Work / Personal Mode Toggle ─────────────────────────────────────────────

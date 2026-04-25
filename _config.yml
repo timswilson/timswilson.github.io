@@ -1,14 +1,10 @@
 # Site settings
 title: timswilson.com
 description: My personal website
-url: "https://timswilson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://timswilson.com"
 
 # Build settings
 markdown: kramdown
-
-# Plugins
-plugins:
-  - jekyll-seo-tag
 
 # Defaults
 defaults:

@@ -9,7 +9,7 @@
   document.getElementById('rosetree-team-size-bullet').textContent = teamSize;
 
   // Active client engagements currently supported
-  var clientEngagements = 50;
+  var clientEngagements = 35;
   document.getElementById('client-engagements-hero').textContent = clientEngagements;
   document.getElementById('client-engagements-stat').textContent = clientEngagements + '+';
   document.getElementById('client-engagements-bullet').textContent = clientEngagements;
@@ -20,6 +20,15 @@
   function yearsSince(date) {
     return Math.floor((new Date() - date) / (1000 * 60 * 60 * 24 * 365.25));
   }
+
+  // Coaching started January 2024; 3 seasons/year (spring, fall, indoor) = 1 season per ~4 months
+  var coachingStart = new Date(2024, 0);
+  var monthsCoaching = (new Date() - coachingStart) / (1000 * 60 * 60 * 24 * 30.44);
+  var coachingSeasons = Math.floor(monthsCoaching / 4);
+  var coachingYears = yearsSince(coachingStart);
+  document.getElementById('coaching-seasons').textContent = coachingSeasons;
+  document.getElementById('coaching-seasons-stat').textContent = coachingSeasons;
+  document.getElementById('coaching-years').textContent = coachingYears + '+';
 
   // Hero bio: Tim's hire date at Rosetree Solutions (April 2018)
   document.getElementById('years-at-rosetree').textContent =
